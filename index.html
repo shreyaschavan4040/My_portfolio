@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Chavan | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Shreyas Chavan</h1>
+        <nav class="mynav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+    
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="profilimg">
+                    <img src="./assits/WhatsApp Image 2025-10-29 at 22.34.11_f894b75c.jpg" alt="Shreyas Chavan">
+                </div>
+                <div class="intro-container">
+                    <div class="intro">
+                        <h3>Hello, I am</h3>
+                        <h1 class="typing-text">Shreyas Chavan</h1>
+                        <p class="profession">Full Stack Developer</p>
+                        <div class="mybtn">
+                            <button class="btn1" onclick="downloadResume('')">Download CV</button>
+                            <button class="btn2" onclick="scrollToSection('contact')">Contact Me</button>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://github.com/shreyaschavan4040" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/shreyas-chavan-5a7a02287/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="shreyaschavan6148@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="Aboutme">
+                <p>I am a passionate full-stack developer with expertise in creating dynamic, responsive, and user-friendly web applications. With a strong foundation in modern web technologies, I strive to deliver high-quality solutions that exceed client expectations.</p>
+                <p>My journey in web development began 2 years ago, and since then I've worked on various projects ranging from simple websites to complex web applications. I enjoy turning complex problems into simple, beautiful designs.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>My <span>Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="mylangs">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-percent="95">
+                            <span>HTML5</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="90">
+                            <span>CSS3</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="85">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="80">
+                            <span>React</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-percent="75">
+                            <span>Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-codepen"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-chrome"></i>
+                            <span>DevTools</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>My <span>Projects</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            <div class="cards-container">
+                <article class="card" data-category="fullstack">
+                    <div class="card-img">
+                        <img src="./assits/Screenshot 2026-01-02 200414.png" alt="Car rental website">
+                    </div>
+                    <div class="card-content">
+                        <h3>Car Rental System</h3>
+                        <p>Responsive rental website with booking system, admin panel, and payment integration.</p>
+                        <div class="card-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="card-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="card-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card" data-category="web">
+                    <div class="card-img">
+                        <img src="./assits/Screenshot 2026-01-02 181343.png" alt="Portfolio site">
+                    </div>
+                    <div class="card-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern, responsive portfolio with dark mode, animations, and project showcase.</p>
+                        <div class="card-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://github.com/shreyaschavan4040" class="card-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="card-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="card" data-category="ui">
+                    <div class="card-img">
+                        <img src="./assits/Screenshot 2026-01-02 203351.png" alt="UI components">
+                    </div>
+                    <div class="card-content">
+                        <h3>UI Component Library</h3>
+                        <p>Collection of reusable, customizable UI components with detailed documentation.</p>
+                        <div class="card-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="card-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="card-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Contact <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>shreyaschavan6148@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9373776148</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Nashik, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shreyas Chavan. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
