@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color:  #abf14f; /* coral */
+    --primary-color: #467eff; /* coral */
     --secondary-color: #0ea5a4; /* teal */
     --accent-color: #ff6b6b;
     --text-color: #0f172a; /* dark slate */
@@ -980,6 +980,7 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+
 
 
 
